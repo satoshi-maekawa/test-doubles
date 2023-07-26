@@ -13,7 +13,7 @@ describe('ミサイル発射システム（LaunchMissileImpl）のテスト', ()
     describe('リファクタ前', () => {
         it('正しいpasswordが設定されている場合、ミサイルを発射して自爆はしないこと', () => {
             const spyMissile = new SpyMissile()
-            const correctPassword = 'black300'
+            const correctPassword = 'showhei39'
             const launchMissile = new LaunchMissileImpl(spyMissile, correctPassword)
 
 
@@ -26,7 +26,7 @@ describe('ミサイル発射システム（LaunchMissileImpl）のテスト', ()
 
         it('不正なpasswordが設定されている場合、ミサイルを発射せず自爆すること', () => {
             const spyMissile = new SpyMissile()
-            const invalidPassword = 'white200'
+            const invalidPassword = 'ippei0'
             const launchMissile = new LaunchMissileImpl(spyMissile, invalidPassword)
 
 
@@ -41,7 +41,7 @@ describe('ミサイル発射システム（LaunchMissileImpl）のテスト', ()
     describe('リファクタ後', () => {
         it('正しいpasswordが設定されている場合、ミサイルを発射して自爆はしないこと', () => {
             const mockMissile = new MockMissile()
-            const correctPassword = 'black300'
+            const correctPassword = 'showhei39'
             const launchMissile = new LaunchMissileImpl(mockMissile, correctPassword)
 
 
@@ -53,7 +53,7 @@ describe('ミサイル発射システム（LaunchMissileImpl）のテスト', ()
 
         it('不正なpasswordが設定されている場合、ミサイルを発射せず自爆すること', () => {
             const mockMissile = new MockMissile()
-            const invalidPassword = 'white200'
+            const invalidPassword = 'ippei0'
             const launchMissile = new LaunchMissileImpl(mockMissile, invalidPassword)
 
 

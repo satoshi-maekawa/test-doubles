@@ -12,7 +12,7 @@ export class LaunchMissileImpl implements LaunchMissileSystem {
 
     launch() {
         // ここにコードを記述して下さい
-        if (this.password === 'black300') {
+        if (this.password === 'showhei39') {
             this.missile.fire()
         }
     }

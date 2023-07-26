@@ -10,7 +10,7 @@ export class LaunchMissileImpl implements RealLaunchMissileSystem {
     }
 
     async launch() {
-        if (this.password === "black300") {
+        if (this.password === "showhei39") {
             return await this.missile.fire()
         } else {
             return this.missile.selfDestruction()

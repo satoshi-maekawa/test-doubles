@@ -9,7 +9,7 @@ describe('ミサイル発射システム（LaunchMissileImpl）のテスト', ()
 
     it('正しいパスワードの場合、spyMissile.fire(）が呼ばれていること', () => {
         const spyMissile = new SpyMissile()
-        const correctPassword = 'black300'
+        const correctPassword = 'showhei39'
         const launchMissile = new LaunchMissileImpl(spyMissile, correctPassword)
 
 
@@ -21,7 +21,7 @@ describe('ミサイル発射システム（LaunchMissileImpl）のテスト', ()
 
     it('間違ったパスワードの場合、spyMissile.fire(）が呼ばれないこと', () => {
         const spyMissile = new SpyMissile()
-        const invalidPassword = 'white200'
+        const invalidPassword = 'ippei0'
         const launchMissile = new LaunchMissileImpl(spyMissile, invalidPassword)
 
 
