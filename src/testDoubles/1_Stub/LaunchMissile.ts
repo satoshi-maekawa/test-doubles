@@ -9,6 +9,7 @@ export class LaunchMissileImpl implements LaunchMissileSystem {
     }
 
     async launch(): Promise<string> {
+        const weather = this.weatherRepository.getByCity('Nagoya')
         // テストが通るように書き換えてください
         return Promise.resolve('')
     }
