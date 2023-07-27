@@ -12,7 +12,7 @@ import {LaunchMissileImpl} from './LaunchMissile'
 describe('LaunchMissileImpl（ミサイル発射装置）のテスト', () => {
     it('間違ったパスワードが返った場合、fireは実行されない', () => {
         // 使うとエラーを出力するミサイル
-        const invalidPassword = 'white300'
+        const invalidPassword = 'ippei0'
         const dummyMissile = new DummyMissile()
         const launchMissile = new LaunchMissileImpl(dummyMissile, invalidPassword)
 

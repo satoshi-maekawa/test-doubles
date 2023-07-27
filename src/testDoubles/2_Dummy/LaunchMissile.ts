@@ -10,6 +10,6 @@ export class LaunchMissileImpl implements LaunchMissileSystem {
     }
 
     launch() {
-        //TODO ②テストが通るように実装を変更してください
+        //TODO ①ミサイルが発射する実装をしてください
     }
 }
