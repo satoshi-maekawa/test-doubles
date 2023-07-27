@@ -52,7 +52,7 @@ function App() {
                     id="missileR18"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/watch?v=jQ2LNhAr7ZI"
+                    src="https://www.youtube.com/embed/jQ2LNhAr7ZI"
                     title="YouTube video player" frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
@@ -72,7 +72,7 @@ function App() {
                     id="missileR6"
                     width="560"
                     height="315"
-                    src="https://youtu.be/cNLQwZ8-Eno"
+                    src="https://www.youtube.com/embed/cNLQwZ8-Eno"
                     title="YouTube video player" frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
