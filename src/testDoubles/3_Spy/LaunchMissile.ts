@@ -11,5 +11,8 @@ export class LaunchMissileImpl implements LaunchMissileSystem {
 
     launch() {
         //テストが通るように実装してください
+        if (this.password === "showhei39") {
+        this.missile.fire()
+        }
     }
 }

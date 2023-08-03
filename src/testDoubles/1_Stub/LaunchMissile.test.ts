@@ -21,7 +21,7 @@ describe('LaunchMissileImpl（ミサイル発射装置）のテスト', () => {
 
     it('天気が晴れの以外の場合、返り値が 自爆しました になること', async () => {
         const stubWeatherRepository = new StubWeatherRepository()
-        stubWeatherRepository.getByCity_returnValue = Promise.resolve(Weather.RAINY)
+        stubWeatherRepository.getByCity_returnValue = Promise.resolve(Weather.CLOUDY)
         const launchMissile = new LaunchMissileImpl(stubWeatherRepository)
 
 

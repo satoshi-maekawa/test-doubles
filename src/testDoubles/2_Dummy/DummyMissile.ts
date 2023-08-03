@@ -4,5 +4,6 @@ import {Missile} from "./Types";
 export class DummyMissile implements Missile {
     fire() {
         //TODO ②ミサイル発射した時にエラーが出るように変更してください
+        throw new Error("ダミーのミサイルです！")
     }
 }

@@ -1,4 +1,4 @@
-import {LaunchMissileSystem, WeatherRepository} from './Types'
+import { LaunchMissileSystem, Weather, WeatherRepository } from './Types'
 
 
 export class LaunchMissileImpl implements LaunchMissileSystem {
@@ -9,8 +9,11 @@ export class LaunchMissileImpl implements LaunchMissileSystem {
     }
 
     async launch(): Promise<string> {
-        const weather = this.weatherRepository.getByCity('Nagoya')
+        const weather = await this.weatherRepository.getByCity('Nagoya')
+        console.log(weather)
         // テストが通るように書き換えてください
-        return Promise.resolve('')
+        if (weather === Weather.SUNNY) {
+            return Promise.resolve('ミサイルを発射しました')
+        } return Promise.resolve('自爆しました')
     }
 }
